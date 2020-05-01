@@ -63,23 +63,23 @@
   ![](labimages\anneal3.png)
   具体参数可以这样设定：
 
-  > - 初温和末温开尔文度数（Initial and Final Temperatures in Degrees Kelvin），绿框中 1000, 0 改成 1000, 298
+  > - 初温和末温开尔文度数，绿框中 1000, 0 改成 1000, 298
   >   即分子先加热到 1000 开，再冷却至 298 开
   >
-  > - 输入平衡步数 (Enter the Number of Equilibration Steps)，默认值[0]，改成 1000
+  > - 输入平衡步数，默认值[0]，改成 1000
   >   即退火之前先平衡 2 皮秒
   >
   > - 输入冷却协议步数 (Enter the Number of Cooling Protocol Steps [2000])，改成 25000
   >   即在 50 皮秒之内从 1000 开冷却至 298 开。显然，这不能反映真实的肽折叠过程。因为，即使是小肽也需要几个纳秒时间完成折叠。更大的分子则需要更长的折叠时间。
   >
-  > - 使用“线性、S 形或指数”冷却协议 (Use Linear, Sigmoidal or Exponential Cooling Protocol)([L], S, or E)，选 L
+  > - 使用“线性、S 形或指数”冷却协议，选 L
   >   这是规定冷却时温度下降曲线形式为线性下降。
   >
-  > - 时间步设为 2 飞秒 (Time step in fs: 2)
+  > - 时间步设为 2 飞秒
   >
-  > - 转存间隔 1 皮秒 (Time between dump: 1)
+  > - 转存间隔 1 皮秒
   > -
-  > - 原子重量放大倍数就用默认值就行了 (Increase Atomic Weights by a Factor of 10^x [x=0.0]: 0)
+  > - 原子重量放大倍数就用默认值就行了 (10^x [x=0.0]: 0)
 
   **提示：** 还可以将所有参数放在文本文件 input.txt 中，然后在命令行直接运行命令，下列命令和上面的退火模拟全过程等价：
 
