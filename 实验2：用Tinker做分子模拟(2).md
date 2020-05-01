@@ -18,7 +18,7 @@
 
 2. 从序列构建自己的肽链或蛋白质
 
-  ![](images/lab6.png)
+  ![从序列构建自己的肽链或蛋白质](images/lab6.png)
 
   (1) 启动 FFE，点击窗口中的 Modeling Commands 卡片头（图示箭头所指）
   ![](images/step1.png)
