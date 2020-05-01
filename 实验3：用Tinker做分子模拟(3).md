@@ -36,7 +36,7 @@
 
   突变或配体绑定引起的自由能（稳定性或亲和力）改变，可以利用基于自由能微扰的炼金模拟计算：
 
-  $\Delta A(X\to Y)=-RT\ln\left\langle\frac{e^{E_X-E_Y}}{RT}\right\rangle_X$
+  $$\Delta A(X\to Y)=-RT\ln\left\langle\frac{e^{E_X-E_Y}}{RT}\right\rangle_X$$
 
   其中，X 是指突变前的 trpcage，而 Y 指突变后 ($\text{TRP}\to\text{ALA}$) 的 trpcage. 系综平均 $\left\langle\cdots\right\rangle_X$ 是指大量构象态对突变前 trpcage 相空间的平均。典型情况需要好几个 ns 的 MD 模拟和 X 与 Y 之间的几个中间微扰步。因为实验的目的，我们只做 1 步从 X 到 Y 的微扰，仅用 trpcage.arc 初态、中间态和末态 3 个结构。
 
