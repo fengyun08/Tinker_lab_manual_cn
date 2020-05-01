@@ -18,13 +18,13 @@
 
 2. 从序列构建自己的肽链或蛋白质
 
-  ![](images/lab6.png)
+  ![](./images/lab6.png)
 
   (1) 启动 FFE，点击窗口中的 Modeling Commands 卡片头（图示箭头所指）
-  ![](images/step1.png)
+  ![](./images/step1.png)
 
   (2) 点击卡片中的下拉按钮，选择 Protein 列表项（图示箭头所指）
-  ![](images/step2.png)
+  ![](./images/step2.png)
 
   (3) 点击 File Name 子卡片头（图示箭头所指），然后，修改编辑框（图示红框处）内容，将生成分子文件命名为 pep
   ![](images/step3.png)
