@@ -18,49 +18,49 @@
 
 2. 从序列构建自己的肽链或蛋白质
 
-  ![](labimages\lab6.png)
+  ![](images\lab6.png)
 
   (1) 启动 FFE，点击窗口中的 Modeling Commands 卡片头（图示箭头所指）
-  ![](labimages\step1.png)
+  ![](images\step1.png)
 
   (2) 点击卡片中的下拉按钮，选择 Protein 列表项（图示箭头所指）
-  ![](labimages\step2.png)
+  ![](images\step2.png)
 
   (3) 点击 File Name 子卡片头（图示箭头所指），然后，修改编辑框（图示红框处）内容，将生成分子文件命名为 pep
-  ![](labimages\step3.png)
+  ![](images\step3.png)
 
   (4) 选择追加 N 端残基 ACE，C 端追加残基 NME
-  ![](labimages\step4.png)
-  ![](labimages\step5.png)
+  ![](images\step4.png)
+  ![](images\step5.png)
 
   (5) 点击 Sequence 子卡片头，选择 Alpha Helix (L) 列表项，目的是生成左$\alpha$螺旋结构的分子
-  ![](labimages\step6.png)
+  ![](images\step6.png)
 
   (6) 连点 7 次 ALA 氨基酸按钮生成 7 残基聚苯胺
-  ![](labimages\step7.png)
+  ![](images\step7.png)
 
   (7) 点击 Cyclize 子卡片头，选择 N 单选钮，不生成环状分子（即生成链式分子），再点击绿色的 Go 按钮
-  ![](labimages\step8.png)
+  ![](images\step8.png)
 
   (8) 弹出窗口选择力场参数为 amber99sb.prm, 你当然也可以选择列出的其它想要的力场参数
-  ![](labimages\step9.png)
+  ![](images\step9.png)
 
   (9) 此时生成了所需要的 6 个结构文件（一般路径在软件安装目录），你可以将这些文件移动到自己的工作目录，进行后续的工作。
-  ![](labimages\step10.png)
+  ![](images\step10.png)
 
   (10) 现在构造分子完毕，可以进行更多的建模命令了（分子构建之前只有 Nucleic 和 Protein 两个命令，现在大约有 27 个）。
-  ![](labimages\step11.png)
+  ![](images\step11.png)
 
 3. 通过模拟退火 (anneal) 做肽折叠
 
   先用文本编辑器打开 pep.key, 如图添加红框内容，再保存退出。
-  ![](labimages\anneal1.png)
+  ![](images\anneal1.png)
 
   然后，执行 minimize 建模命令（参数不用改，就用红框中的默认值就行了）
-  ![](labimages\anneal2.png)
+  ![](images\anneal2.png)
 
   接着执行模拟退火 anneal 建模命令，依次点击每个卡片头，设定好各项参数
-  ![](labimages\anneal3.png)
+  ![](images\anneal3.png)
   具体参数可以这样设定：
 
   > - 初温和末温开尔文度数，绿框中 1000, 0 改成 1000, 298
@@ -69,7 +69,7 @@
   > - 输入平衡步数，默认值[0]，改成 1000
   >   即退火之前先平衡 2 皮秒
   >
-  > - 输入冷却协议步数 (Enter the Number of Cooling Protocol Steps [2000])，改成 25000
+  > - 输入冷却协议步数 [2000]，改成 25000
   >   即在 50 皮秒之内从 1000 开冷却至 298 开。显然，这不能反映真实的肽折叠过程。因为，即使是小肽也需要几个纳秒时间完成折叠。更大的分子则需要更长的折叠时间。
   >
   > - 使用“线性、S 形或指数”冷却协议，选 L
