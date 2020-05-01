@@ -18,7 +18,7 @@
 
 2. 从序列构建自己的肽链或蛋白质
 
-  ![操作图像](./images/lab6.png)
+  ![操作图像](https://github.com/fengyun08/Tinker_lab_manual_cn/tree/master/images/lab6.png)
 
   (1) 启动 FFE，点击窗口中的 Modeling Commands 卡片头（图示箭头所指）
   ![操作图像](./images/step1.png)
